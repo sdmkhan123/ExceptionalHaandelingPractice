@@ -4,7 +4,7 @@ using System.Text;
 
 namespace ExceptionalHaandelingPractice
 {
-    public class CustomExceptionHandling : ApplicationException
+    public class CustomExceptionHandling : Exception
     {
         public override string Message
         {
