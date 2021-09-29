@@ -24,7 +24,8 @@ namespace ExceptionalHaandelingPractice
                     throw new CustomExceptionHandling();
                 }
                 int z = x / y;
-                Console.WriteLine(z);
+                Console.WriteLine("Resultant value of z = " + z);
+                Console.WriteLine("Program is executed successfully");
             }
             catch(DivideByZeroException ex1)
             {
@@ -55,9 +56,11 @@ namespace ExceptionalHaandelingPractice
             }
             finally
             {
+                Console.WriteLine("\n=========================================================================================\n");
                 Console.WriteLine("Finally block code will always executed at any cost " +
                     "or in every condition even return the method even there is abnormal termination happen" +
                     "due to there is no catch block, finally block will stilll executed");
+                Console.WriteLine("\n=========================================================================================");
             }
             Console.WriteLine("End of Program");
         }
